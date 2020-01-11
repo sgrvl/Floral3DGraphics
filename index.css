@@ -46,6 +46,16 @@ h1, h2 {
 	overflow: hidden;
 }
 
+@media only screen and (orientation: portrait) {
+	.wrap {
+		grid-template-areas: 
+			"header header menu"
+			"gallery gallery slider"
+			"content content slider"
+			"social . arrow";
+	}
+}
+
 a {
 	text-decoration: none;
 	color: var(--noir);	
